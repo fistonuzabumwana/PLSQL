@@ -1,0 +1,8 @@
+set SERVEROUT on;
+DECLARE
+Farmerid FARMERS.FARMERID%TYPE := &FarmerID;
+
+BEGIN
+    FARMERS_MONITORING_SYSTEM.farmer_report(Farmerid);
+END;
+/

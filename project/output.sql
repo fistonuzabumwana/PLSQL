@@ -1,7 +1,9 @@
 set SERVEROUT ON;
-DECLARE
-Farmerid FARMERS.FARMERID%TYPE := &FarmerID;
+--DECLARE
+--Farmerid FARMERS.FARMERID%TYPE := &FarmerID;
+--BEGIN
+--farmer_report (FARMERID);
 BEGIN
-farmer_report (FARMERID);
+insert_into_harvestquantity; -- Assuming no arguments required
 END;
 /
